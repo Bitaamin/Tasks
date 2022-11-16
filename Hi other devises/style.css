@@ -1,0 +1,61 @@
+h1{
+    background-color: white;    
+    border-radius: 30px;
+    width: 250px;
+    margin:20px auto;
+    text-align: center;
+    font-size:x-large;
+    
+}
+img{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    
+}
+div{
+    width: 500px;
+    margin: auto;
+    margin-top:350px;
+}
+body{
+    background-color: teal;
+}
+@media screen and (max-width:1024px) {
+    body{
+        background-color: salmon;
+    }
+    h1{
+        font-size: larger;
+    }
+    img{
+        width:350px ;
+        height: 350px;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        background-color: aqua;
+    }
+    h1{
+        font-size: small;
+    }
+    img{
+        width:300px ;
+        height:300px ;
+    }
+
+}
+@media screen and (max-width:425px) {
+    body{
+        background-color: white;
+    }
+    h1{
+        font-size: smaller;
+    }
+    img{
+       display: none;
+    }
+
+}

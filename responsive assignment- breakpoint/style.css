@@ -1,0 +1,48 @@
+body{
+    background-color: salmon;
+}
+h1{
+    font-size:xx-large ;
+    text-align: center;
+    
+}
+@media screen and (max-width:1200px) {
+    body{
+        background-color: aqua;
+    }
+    h1{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width:992px) {
+    body{
+        background-color: violet;
+    }
+    h1{
+        font-size: larger;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        background-color: teal;
+    }
+    h1{
+        font-size:large;
+    }
+}
+@media screen and (max-width:576) {
+    body{
+        background-color: red;
+    }
+    h1{
+        font-size: medium;
+    }
+}
+@media screen and (max-width:575px) {
+    body{
+        background-color: orange;
+    }
+    h1{
+        font-size: small;
+    }
+}
