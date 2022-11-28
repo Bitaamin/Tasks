@@ -1,0 +1,35 @@
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: auto;
+}
+.item{
+    background-color: aqua;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-duration:1.5s ;
+}
+.item p{
+    cursor: pointer;
+    transition: 2s ;
+ }
+
+.item:hover{
+   height: 200px;
+   background-color: orange;
+   margin: auto;
+    text-align: center;
+    font-size:large;
+}
+
+
