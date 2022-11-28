@@ -16,12 +16,11 @@
     let e = null; 
     
 // 5
-    console.log(typeof (a))
-    console.log(typeof (b))
-    console.log(typeof (c))
-    console.log(typeof (d))
-    console.log(typeof (e))
-    
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    console.log(typeof d);
+    console.log(typeof e);
 // 6
     let coco ;
 
@@ -47,13 +46,13 @@
     let TriangleA = 3;
     let TriangleB = 4;
     let TriangleC = 5;
-    let TriangleS = TriangleA + TriangleB + TriangleC;
-    console.log(TriangleS)
+    let TriangleP = TriangleA + TriangleB + TriangleC;
+    console.log(TriangleP)
 
 // 12 
-    let TriangleP = 3.14;
+    let TriangleP2 = 3.14;
     let TriangleR = 8;
-    let TriangleCirkleS = TriangleP + TriangleR ** 2;
+    let TriangleCirkleS = TriangleP2 + TriangleR ** 2;
     console.log(TriangleCirkleS)
 
 // 13  m = y2-y1/x2-x1
@@ -83,8 +82,39 @@
     console.log(BitRate)
 
 // 16
-    let side1 = 15;
-    let side2 = 17;
-    let side3 = 13;
-    let TrngleS = side1 + side2 + side3;
+    let side1 = 16;
+    let side2 = 16;
+    let side3 = 16;
+    let H = Math.sqrt (side1**2 - (side2/2)**2) ;
+    let TrngleS = (H * side2)/2; 
     console.log(TrngleS);
+
+// 17 
+    let CelsiumTo = 23;
+    let Fahrenheit = CelsiumTo * 1.8 + 32;
+    console.log(Fahrenheit);
+
+// 18 
+    let FahrenheitTo = 64;
+    let Celsium = (FahrenheitTo - 32) * 0.5556
+    console.log(Celsium);
+
+// 19 
+    let number1 = 15
+    let number2 = 10
+    let nemeh = number1 + number2;
+    let hasah = number1 - number2;
+    let vrjih = number1 * number2;
+    let huwaah = number1 / number2;
+    let huwi = number1 % number2;
+    console.log(nemeh, hasah, vrjih, huwaah, huwi);
+
+// 20 
+    let cm = 20;
+    let inch = cm / 2.54
+    console.log(inch);
+    let iiinch = 50;
+    let centimeter= iiinch * 2.54;
+    console.log(centimeter);
+
+
