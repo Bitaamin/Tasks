@@ -6,8 +6,9 @@
     align-items: center;
 }
 .shaddiv{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    position: absolute;
     width: 260px;
     height: 260px;
     /* background-color: salmon; */
@@ -21,9 +22,9 @@
     box-shadow: 0 0 10px  black;
 }
 .movediv{
-    display: flex;
+    /* display: flex; */
     position: absolute;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 260px;
     height: 260px;
 }
@@ -35,6 +36,9 @@
     transition: 2s;
     background-color: teal;
 }
-.container:hover{
-    width: 100vw;
+.container:hover .movebox1{
+   left: 100px;
+}
+.movebox1 {
+    transition:2s ;
 }

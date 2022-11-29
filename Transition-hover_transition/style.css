@@ -13,7 +13,7 @@
 }
 
 
-button:hover{
+button:active{
     width: 100vw; 
 }
 .box2:hover{
