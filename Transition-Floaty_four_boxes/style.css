@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.shaddiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 260px;
+    /* background-color: salmon; */
+    
+}
+.box{
+    width: 100px;
+    margin: 15px;
+    height: 100px;
+    /* background-color: teal; */
+    box-shadow: 0 0 10px  black;
+}
+.movediv{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 260px;
+}
+.movebox {
+    width: 100px;
+    margin: 15px;
+    height: 100px;
+    transition-timing-function: linear;
+    transition: 2s;
+    background-color: teal;
+}
+.container:hover{
+    width: 100vw;
+}
