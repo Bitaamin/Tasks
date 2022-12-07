@@ -19,6 +19,8 @@ while (c < arrayNumbers.length) {
 }
 console.log(max);
 
+console.log("max");
+
 // 3 
 
 c = 0;
