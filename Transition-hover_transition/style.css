@@ -1,0 +1,21 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    transition: 2s;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 2s;
+}
+
+
+button:active{
+    width: 100vw; 
+}
+.box2:hover{
+    width: 100vw;
+}
