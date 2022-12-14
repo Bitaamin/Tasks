@@ -1,0 +1,21 @@
+#section1{
+    width: 40%;
+    margin: auto;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUF5632qQo29P_knZ2E8Twv3pGP3ohlBian04bOoWv86vgvfClGD8Cf9TQoTWyGJq92U&usqp=CAU);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.headtitle{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+.ClassInput{ 
+    border-radius: 20px 0 0 20px;
+    height: 30px;
+}
+.button {
+    border-radius: 0 20px 20px 0;
+    height: 36px;
+}
