@@ -1,21 +1,43 @@
 #section1{
-    width: 40%;
+    width: 30rem;
     margin: auto;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUF5632qQo29P_knZ2E8Twv3pGP3ohlBian04bOoWv86vgvfClGD8Cf9TQoTWyGJq92U&usqp=CAU);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.headtitle{
+#headtitle{
     font-size: xx-large;
     color: black;
     text-align: center;
 }
-.ClassInput{ 
-    border-radius: 20px 0 0 20px;
-    height: 30px;
+#task{ 
+    border-radius:5px 0 0 5px ;
+    border: none;
+    border-bottom: 2px solid orange;
+    width: 20rem;
 }
-.button {
-    border-radius: 0 20px 20px 0;
-    height: 36px;
+#add {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    padding: 15px;
+    background-color: orange;
+    width: 4rem;
+}
+#inputDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#listTitle {
+    text-align: center;
+    font-size: 35px;
+}
+
+.taskInput{
+    display: none;
+}
+.icons{
+    display: flex;
 }
