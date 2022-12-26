@@ -11,22 +11,47 @@ list.innerHTML = "Жагсаалт";
 let btn = document.getElementById("add");
 btn.innerHTML = "+ADD";
 btn.addEventListener("click", funcAddTask);
-function funcAddTask(){
-    taskInput.readOnly = true;
-    taskInput.value = task.value
-}
+
 
 
 let input = document.getElementById("task");
 input.placeholder = "Та таскаа оруулна уу.";
 
+function funcAddTask(){
+    let listDiv = document.createElement("div");
+    listDiv.className = "taskCheck";
 
-let listDiv = document.createElement("div");
-let listInput = document.createElement("input");
-let editBtn = document.createElement("span");
-let delBtn = document.createElement("span");
+    let listInput = document.createElement("input");
+    listInput.className = "BottomInput"
+    listInput.readOnly = true;
+    listInput.value = input.value;
 
-editBtn.innerHTML = "Засах";
-editBtn.innerHTML = "Устгах";
+    let iconsDiv = document.createElement("div");
+    iconsDiv.className = "icons"
+
+    let editBtn = document.createElement("image");
+    editBtn.className = "editI"
+    // editBtn.innerHTML = "Засах";
+    editBtn.addEventListener("click", function () {
+        listInput.readOnly = !listInput.readOnly
+    });
+
+    let delBtn = document.createElement("image");
+    // delBtn.innerHTML = "Устгах";
+    delBtn.addEventListener("click", function () {
+        sectionDiv2.removeChild(listDiv)
+    });
+
+    iconsDiv.appendChild(editBtn);
+    iconsDiv.appendChild(delBtn);
+
+    listDiv.appendChild(listInput);
+    listDiv.appendChild(iconsDiv);
+
+    sectionDiv2.appendChild(listDiv);
+
+    
+}
+
 // let inputDB = document.createElement("input")
 // let 

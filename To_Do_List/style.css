@@ -41,3 +41,23 @@
 .icons{
     display: flex;
 }
+
+.taskCheck {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    margin: auto;
+}
+
+.BottomInput {
+    border: none;
+    width: 10rem;
+    height: 20px;
+    background: none;
+}
+
+.editI{
+    background-image: url(https://www.flaticon.com/free-icon/draw_61456?term=edit&page=1&position=13&origin=search&related_id=61456);
+    width: 20px;
+    height: 20px;
+}

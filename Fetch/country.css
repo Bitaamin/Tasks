@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#section1 {
+  display: flex;
+}
+
+
+.col {
+  background-color: #FDFEFF;
+  width: 27%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 4px rgb(191 191 191);
+  margin: 10px;
+  transition: all 800ms ease;
+
+}
+.col:hover {
+  background-color: black;
+  color: white;
+
+}
+
+#list-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+}
