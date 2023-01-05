@@ -22,14 +22,15 @@
                     width="100px" height="100px" alt="">
                 <p class="fw-bold te">T-commerce</p>
             </div>
-            <div>
+            <div class="searchInput">
                 <div class="input-group ">
-                    <form action="" class="d-flex">
+                    <form action="" class="d-flex w-100">
+                        <!-- <img class="input-group-text" src="./ShoppyImages/magnifying-glass.png" id="basic-addon1"> -->
+                        <input id="search" type="text"
+                        class="form-control w-100 bg-body-secondary text-emphasis-dark rounded-pill"
+                        placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                         <button type="submit" class="btn"><img src="./ShoppyImages/magnifying-glass.png" width="30px"
                                 alt=""></button>
-                        <!-- <img class="input-group-text" src="./ShoppyImages/magnifying-glass.png" id="basic-addon1"> -->
-                        <input id="search" type="text" class="form-control bg-body-secondary text-emphasis-dark rounded-pill"
-                            placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </form>
                 </div>
             </div>
@@ -44,9 +45,9 @@
             </ul>
         </div>
         <div class="row">
-            <div class="col-3 border border-primary bg-white text-primary">Departments</div>
-            <div class="items col-9">
-                <div id="products">
+            <div class="col-3 border border-primary bg-white department text-primary">Departments</div>
+            <div class=" col-9 row" id="products">
+                <!-- <div id="products" class="row w-100"> -->
                     <!-- <div class="mainCard">
                         <img id="cardImage" src="" alt="">
                         <div class="body">
@@ -60,8 +61,9 @@
                             </div>
                         </div>
                     </div> -->
-                </div>
+                <!-- </div> -->
             </div>
+        </div>
     </section>
     <script src="./shoppy.js"></script>
 </body>

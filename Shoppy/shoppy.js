@@ -37,17 +37,20 @@ function cate() {
 function allItems(param) {
     let row = "";
     (param ? param : shopData).map(({ thumbnail, title, discountPercentage, price, description, rating }, index) => {
-        row += `<div class="card shadow-lg" style="width: 18rem;">
-                     <img src="${thumbnail}" class="card-img-top" alt="...">
-                     <div class="card-body">
-                        <h5 class="card-title title">${title}</h5>
-                        <p class="discount">${discountPercentage}% OFF</p>
-                        <p class="card-text price">$${price}.00</p>
-                        <p class="card-text description">${description}</p>
-                        <div class="d-flex justify-content-around">
-                        <p>5/${rating}</p>
-                        <a href="#" class="btn btn-primary">Got it</a>
-                        </div>
+        row += `<div class="card  col-3">
+                    <div class="border rounded">
+                    <div class="myImg ratio ratio-4x3">
+                       <img src="${thumbnail}">
+                    </div>
+                    <div class ="p-3">
+                       <h5 class="">${title}</h5>
+                       <p class="discount">${discountPercentage}% OFF</p>
+                       <p>$${price}.00</p>
+                       <p class=" description">${description}</p>
+                       <div class="d-flex justify-content-around">
+                       <p>5/${rating}</p>
+                       <a href="#" class="btn btn-primary">Got it</a></div>
+                   </div>
                     </div>
                 </div>`
         products.innerHTML = row;

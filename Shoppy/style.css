@@ -3,19 +3,30 @@
     margin: 0;
 }
 
-
+#category{
+    /* background-color: rgb(235, 245, 235); */
+}
+.department{
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size:1.2rem ;
+}
 #menu {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    height: 50px;
 }
 
 #menu li:hover {
     background-color: black;
     color: white;
+    height: 50px;
     border-radius: 10px;
     transition: all 400ms ease;
-    padding: 5px;
+    padding: 10px;
 }
 
 #products {
@@ -23,7 +34,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    /* width: 27%; */
     /* box-shadow: 0 0  5px black; */
+}
+.searchInput{
+    width: 40%;
+}
+.searchInput input{
+    width: 100%;
 }
 
 .discount {
@@ -49,4 +67,7 @@
 
 .title {
     text-align: center;
+}
+.myImg>img{
+    /* object-fit: cover; */
 }
