@@ -1,16 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useState } from "react"
-const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
 
 function App() {
 
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
-  const [doneTotal, setDoneTotal] = useState()
+  const [doneTotal, setDoneTotal] = useState(0);
 
   const addTask = () => {
     console.log("add");
+
+
+    
     const newObj = {
       id: tasks.length,
       title: task,
@@ -27,15 +30,31 @@ function App() {
     setTask("");
   };
 
-  const onDoneTask = (id) => {
-      const objList = tasks.map((val)=> {
-        if(val.id == id){
-          val.isDone = !val.isDone;
-        }
-        return val;
-      });
+  const dltBtn = (id) => {
 
-      setTasks(objList);
+    console.log(id);
+
+     const newAr = tasks.filter((del)=>del.id !== id )
+
+     setTasks(newAr)
+  }
+
+  const onDoneTask = (id) => {
+    const objList = tasks.map((val) => {
+      if (val.id === id) {
+
+        val.isDone = !val.isDone;
+
+        if (val.isDone) {
+          setDoneTotal(doneTotal + 1);
+        } else {
+          setDoneTotal(doneTotal - 1);
+        }
+      }
+      return val;
+    });
+
+    setTasks(objList);
 
   }
 
@@ -45,7 +64,7 @@ function App() {
         <div className="col-md-4">
           <h1>Todo List</h1>
           Total {tasks.length}
-      
+          <p>Checked Task {doneTotal}</p>
           <div className="d-flex gap-3">
             <input
 
@@ -57,7 +76,6 @@ function App() {
             <button className='btn btn-primary' onClick={addTask}>
               Add
             </button>
-
           </div>
         </div>
       </div>
@@ -67,12 +85,14 @@ function App() {
             tasks.map((e) => (
               <div className='d-flex justtify-content-between align-items-center'>
                 <div className="d-flex">
-                  <input type="checkbox" checked={e.isDone} onChange={()=> onDoneTask(e.id)} />
+                  <input type="checkbox" checked={e.isDone} onChange={() => onDoneTask(e.id)} />
                   <h4>{e.title}</h4>
                 </div>
                 <div>
-                  <button className="btn btn-warning">Edit</button>
-                  <button className="btn btn-danger">Delete</button>
+                  <button className="btn btn-warning" >Edit</button>
+                  <button className="btn btn-danger" onClick={() => (
+                    dltBtn(e.id)
+                  )}>Delete</button>
                 </div>
               </div>
             ))
