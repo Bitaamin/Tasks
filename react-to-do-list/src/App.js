@@ -1,10 +1,20 @@
 
 import './App.css';
 import React, { useState } from "react"
+import Modal from "./component/modal"
 
 
 function App() {
 
+  const init = {
+    id: "",
+    task: "",
+    type: 0,
+    isImportant: false,
+    isDone: false,
+  };
+
+  const [taskObj, setTaskObj] = useState(init)
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
   const [doneTotal, setDoneTotal] = useState(0);
@@ -76,6 +86,7 @@ function App() {
             <button className='btn btn-primary' onClick={addTask}>
               Add
             </button>
+            <Modal setTaskObj={setTaskObj}/>
           </div>
         </div>
       </div>
