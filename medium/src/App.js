@@ -1,10 +1,11 @@
 import Nav from "./component/Nav";
 import Home from "./component/home.js";
-// import TrendNews from "./component/trendNews";
+import TrendNews from "./component/trendNews";
 // import Content from "./component/content";
 // import Footer from "./component/footer";
 import './App.css';
-import Admin from "./component/Admin";
+// import Admin from "./component/Admin";
+import React from 'react'
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
       id: 3,
       profileImage: require("./images/pro1.jpeg"),
       name: "Amaraa Jijig",
-      comment: "",
+      comment: "dadadadada",
       date: "Dec 23, 2022",
       minut: "3"
     },
@@ -58,10 +59,15 @@ function App() {
       minut: "3"
     }
   ]
+
+
   return (
 
     <div className="">
-      <Admin />
+      <Nav />
+      <Home />
+      <TrendNews
+        Data={Data} />
     </div>
   )
 }
