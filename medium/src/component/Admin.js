@@ -78,7 +78,7 @@ export default function Admin() {
                            <table className='table'>
                               <thead>
                                  <tr>
-                                    <th>!</th>
+                                    <th>#</th>
                                     <th>Title</th>
 
                                     <th>Category</th>

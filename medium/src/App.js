@@ -6,6 +6,7 @@ import TrendNews from "./component/trendNews";
 import './App.css';
 // import Admin from "./component/Admin";
 import React from 'react'
+import Admin from "./component/Admin";
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
     <div className="">
       <Nav />
       <Home />
+      <Admin />
       <TrendNews
         Data={Data} />
     </div>
